@@ -6,11 +6,13 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Introduce el primer numero para sumar: ");
-        String nome = input.nexInt();
-        saludar(nome);
+        int x = input.nexInt();
+        System.out.print("Introduce el segundo numero para sumar: ");
+        int z = input.nextInt();
+        sumar(x,z);
     }
 
-    private static void saludar(String name) {
-        System.out.println("Bienvenido " + name);
-    }
+    private static void sumar(int a , int b) {
+        int resultado = a + b;
+        System.out.println("La suma de los dos numeros " + a + " y " + b + " es igual: "+ resultado);   }
 }
